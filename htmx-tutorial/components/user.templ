@@ -1,0 +1,12 @@
+package components
+
+import "github.com/massanaRoger/go/htmx-tutorial/models"
+
+templ User(users []user_model.User) {
+	<h1 class="text-2xl font-bold my-4">Users</h1>
+	<ul>
+		for _, user := range users {
+			<li>{ user.Name }</li>
+		}
+	</ul>
+}
